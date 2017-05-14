@@ -14,4 +14,4 @@ Include the following assets in your project
 ## Build your own distribution
 ```
 $ yarn bundle
-```
+```p

@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 
 $text-color: #fff;
+$focus-background-color: #5bc0de;
 
 .isometric-block {
   display: block;
@@ -19,7 +20,7 @@ $text-color: #fff;
   &.hidden {
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s 0s;
+    transition: opacity 0s;
   }
 
   &.active {
@@ -190,7 +191,7 @@ $text-color: #fff;
 
     .isometric-grid {
       transform: scale(0.75);
-      transition: left 0.3s, top 0.3s, opacity 0.6s;
+      transition: left 0.3s, top 0.3s, opacity 0.6s, transform 0.3s 0s;
     }
 
     .information-container-home {
@@ -210,6 +211,7 @@ $text-color: #fff;
       cursor: zoom-out;
       opacity: 0.8;
       z-index: 90;
+      transition: opacity 0.3s, z-index 0s 0s;
     }
 
     .information-container-detail {
@@ -218,6 +220,8 @@ $text-color: #fff;
 
       .content-detail-container {
         cursor: default;
+        max-height: 100vh;
+        overflow: scroll;
       }
     }
   }
@@ -308,7 +312,8 @@ $text-color: #fff;
       left: 0;
       opacity: 0;
       z-index: 60;
-      transition: opacity 0.3s;
+      transition: opacity 0.5s, z-index 0s 0.5s;
+      background: $focus-background-color;
     }
 
     .btn {

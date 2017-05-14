@@ -6,17 +6,19 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>House of Isometric</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../dist/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../dist/house-of-isometric.css">
 </head>
-<body>
+
+<body class="bg-info">
   <div class="sr-only">
     <h1 class="text-secondary">Logiciel de référence pour EMS</h1>
     <h2 class="text-secondary mb-3"><strong>Sadies est présent à tous les étages</strong></h2>
   </div>
   <div aria-hidden="true" class="isometric-layout home-view">
     <div class="information-container visible information-container-home">
-      <div class="spacer spacer-md"></div>
-      <div class="container">
+      <div class="container mt-5">
         <div class="row">
           <div class="col-md-12">
             <div class="text-center">
@@ -24,8 +26,7 @@
                 <h1 class="text-secondary">Logiciel de référence pour EMS</h1>
                 <h2 class="text-secondary mb-3"><strong>Sadies est présent à tous les étages</strong></h2>
               </div>
-              <div class="spacer"></div>
-              <div class="fade-out-bottom fade-out">
+              <div class="fade-out-bottom fade-out mt-5">
                 <a href="#" class="btn btn-lg btn-primary btn-bold showExpandedView">Explorer l’EMS</a>
               </div>
             </div>
@@ -34,11 +35,10 @@
       </div>
     </div>
     <div class="information-container information-container-expanded">
-      <div class="spacer spacer-sm"></div>
-      <div class="container">
+      <div class="container mt-5">
         <div class="row">
           <div class="col-md-4">
-            <a href="#" class="btn btn-default showHomeView">
+            <a href="#" class="btn btn-primary showHomeView">
           <span class="icons icons-arrow-left icons-left mr-1"></span>
           Retour
         </a>
@@ -47,11 +47,10 @@
       </div>
     </div>
     <div class="information-container information-container-detail">
-      <div class="spacer spacer-sm"></div>
-      <div class="container">
+      <div class="container mt-5">
         <div class="row">
           <div class="col-md-7">
-            <a href="#" class="btn btn-default showExpandedView">
+            <a href="#" class="btn btn-primary showExpandedView mb-2">
             <span class="icons icons-arrow-left icons-left mr-1"></span>
             Back to plan
             </a>
@@ -62,17 +61,15 @@
       </div>
     </div>
     <div class="isometric-grid">
-      <div class="isometric-block block-2x2" data-coordinates="[1,-1]" data-coordinates-expanded="[1,-3]" data-floor="1">
+      <div class="isometric-block block-2x2 has-detail" data-coordinates="[1,-1]" data-coordinates-expanded="[1,-3]" data-floor="1">
         <img src="img/transportl-ref-1298x1262.png" alt="Illustration de la pièce: Debitis enim amet suscipit">
         <h1>Debitis enim amet suscipit</h1>
         <p class="description">Reprehenderit dolor dolores reiciendis est distinctio atque quidem debitis. Eum delectus suscipit fuga qui saepe
           deserunt mollitia. Accusamus iste quas eligendi distinctio voluptatibus incidunt.</p>
         <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0">Debitis enim amet suscipit</h4>
-            </div>
+          <div class="card">
             <div class="card-block">
+              <h4 class="card-title mb-0">Debitis enim amet suscipit</h4>
               <p class="card-text">
                 <p>Reprehenderit dolor dolores reiciendis est distinctio atque quidem debitis. Eum delectus suscipit fuga qui
                   saepe deserunt mollitia. Accusamus iste quas eligendi distinctio voluptatibus incidunt.</p>
@@ -84,16 +81,14 @@
           </div>
         </div>
       </div>
-      <div class="isometric-block block-2x1" data-coordinates="[-2,1]" data-coordinates-expanded="[-6,1]" data-floor="1">
+      <div class="isometric-block block-2x1 has-detail" data-coordinates="[-2,1]" data-coordinates-expanded="[-6,1]" data-floor="1">
         <img src="img/stock-ref-1200x1030.png" alt="Illustration de la pièce: Sed repellendus">
         <h1>Sed repellendus</h1>
         <p class="description">Repudiandae eligendi nesciunt adipisci facere exercitationem esse commodi. Vel et aut ipsa tenetur nihil.</p>
         <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0">Architecto nihil maxime et aut</h4>
-            </div>
+          <div class="card">
             <div class="card-block">
+              <h4 class="card-title mb-0">Architecto nihil maxime et aut</h4>
               <p class="card-text">
                 <p>Sed blanditiis accusamus repellat sapiente exercitationem dicta impedit. Ut laudantium ut a reiciendis in
                   id cumque et. Aliquid ipsa id excepturi aliquam qui temporibus.</p>
@@ -105,18 +100,16 @@
           </div>
         </div>
       </div>
-      <div class="isometric-block block-2x1" data-coordinates="[-1,1]" data-coordinates-expanded="[-3,1]" data-floor="1">
+      <div class="isometric-block block-2x1 has-detail" data-coordinates="[-1,1]" data-coordinates-expanded="[-3,1]" data-floor="1">
         <img src="img/cuisine-ref-1200x1030.png" alt="Illustration de la pièce: Repudiandae repellendus nesciunt">
-        <h1>Repudiandae repellendus nesciunt</h1>
+        <h1>Repudiandae repellendus</h1>
         <p class="description">Et illum eum ea dolorem eveniet et. Repudiandae ut ipsa ut ut. Dignissimos hic facilis distinctio accusantium doloremque.<br
           />
         </p>
         <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0">Repudiandae repellendus nesciunt</h4>
-            </div>
+          <div class="card">
             <div class="card-block">
+              <h4 class="card-title mb-0">Repudiandae repellendus nesciunt</h4>
               <p class="card-text">
                 <p>Sapiente tenetur vel quam pariatur voluptates delectus et ea. Nihil fuga architecto rem fugiat suscipit blanditiis
                   et. Numquam esse dignissimos eos aut optio. Ut dolorum expedita voluptas.</p>
@@ -128,16 +121,14 @@
           </div>
         </div>
       </div>
-      <div class="isometric-block block-2x2" data-coordinates="[1,1]" data-coordinates-expanded="[1,1]" data-floor="1">
+      <div class="isometric-block block-2x2 has-detail" data-coordinates="[1,1]" data-coordinates-expanded="[1,1]" data-floor="1">
         <img src="img/accueil-ref-1298x1262.png" alt="Illustration de la pièce: Accueil">
         <h1>Accueil</h1>
         <p class="description">Quasi aut iusto non. Quia quia magni veniam eos perferendis.</p>
         <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0">Suscipit alias error consequuntur</h4>
-            </div>
+          <div class="card">
             <div class="card-block">
+              <h4 class="card-title mb-0">Suscipit alias error consequuntur</h4>
               <p class="card-text">
                 <p>Ut
                   <del>voluptas non voluptatum</del> non. Occaecati a nihil iure doloremque saepe. <a href="http://www.google.com">Ut illo ratione blanditiis</a>                  delectus quam dolores in.</p>
@@ -152,16 +143,14 @@
           </div>
         </div>
       </div>
-      <div class="isometric-block block-1x1" data-coordinates="[-1,-3]" data-coordinates-expanded="[4,4]" data-floor="2">
+      <div class="isometric-block block-1x1 has-detail" data-coordinates="[-1,-3]" data-coordinates-expanded="[4,4]" data-floor="2">
         <img src="img/chambre-A-ref-800x800.png" alt="Illustration de la pièce: Chambre A">
         <h1>Chambre A</h1>
         <p class="description">Praesentium praesentium tenetur quia quia. </p>
         <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0">Est asperiores soluta tempore</h4>
-            </div>
+          <div class="card">
             <div class="card-block">
+              <h4 class="card-title mb-0">Est asperiores soluta tempore</h4>
               <p class="card-text">
                 <p>Nihil in voluptatem sunt non impedit qui. Quae consequatur natus et adipisci. Amet quisquam voluptate iure.
                   Voluptatem numquam dolor et ipsa est voluptatem sequi. Libero et non quos labore sit assumenda maiores.</p>
@@ -181,16 +170,14 @@
           </div>
         </div>
       </div>
-      <div class="isometric-block block-1x1" data-coordinates="[0,-3]" data-coordinates-expanded="[]" data-floor="2">
+      <div class="isometric-block block-1x1 has-detail" data-coordinates="[0,-3]" data-coordinates-expanded="[]" data-floor="2">
         <img src="img/chambre-B-ref-800x800.png" alt="Illustration de la pièce: Chambre B">
         <h1>Chambre B</h1>
         <p class="description">Tenetur quia quia. </p>
         <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0">Est asperiores soluta tempore</h4>
-            </div>
+          <div class="card">
             <div class="card-block">
+              <h4 class="card-title mb-0">Est asperiores soluta tempore</h4>
               <p class="card-text">
                 <p>&nbsp;</p>
                 <p>Quaerat quaerat provident voluptas accusamus. Et provident qui voluptas quasi consectetur eum inventore ut.
@@ -203,16 +190,14 @@
           </div>
         </div>
       </div>
-      <div class="isometric-block block-1x1" data-coordinates="[-1,-2]" data-coordinates-expanded="[]" data-floor="2">
+      <div class="isometric-block block-1x1 has-detail" data-coordinates="[-1,-2]" data-coordinates-expanded="[]" data-floor="2">
         <img src="img/chambre-C-ref-800x800.png" alt="Illustration de la pièce: Chambre C">
         <h1>Chambre C</h1>
         <p class="description">Aut perferendis perferendis id occaecati</p>
         <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0">Est asperiores soluta tempore</h4>
-            </div>
+          <div class="card">
             <div class="card-block">
+              <h4 class="card-title mb-0">Est asperiores soluta tempore</h4>
               <p class="card-text">
                 <p>Quaerat quaerat provident voluptas accusamus. Et provident qui voluptas quasi consectetur eum inventore ut.
                   Minima eveniet aperiam voluptates aliquid vero.</p>
@@ -224,16 +209,14 @@
           </div>
         </div>
       </div>
-      <div class="isometric-block block-1x1" data-coordinates="[0,-2]" data-coordinates-expanded="[]" data-floor="2">
+      <div class="isometric-block block-1x1 has-detail" data-coordinates="[0,-2]" data-coordinates-expanded="[]" data-floor="2">
         <img src="img/chambre-D-ref-800x800.png" alt="Illustration de la pièce: Chambre D">
         <h1>Chambre D</h1>
         <p class="description">Aut perferendis perferendis id occaecati</p>
         <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0">Titre</h4>
-            </div>
+          <div class="card">
             <div class="card-block">
+              <h4 class="card-title mb-0">Titre</h4>
               <p class="card-text">
                 <p>Doloremque laudantium voluptas dicta quia et omnis molestiae.</p>
               </p>
@@ -244,38 +227,34 @@
           </div>
         </div>
       </div>
-      <div class="isometric-block block-2x2" data-coordinates="[-2, 0]" data-coordinates-expanded="[5,-3]" data-floor="2">
+      <div class="isometric-block block-2x2 has-detail" data-coordinates="[-2, 0]" data-coordinates-expanded="[5,-3]" data-floor="2">
         <img src="img/restauration-ref-1298x1262.png" alt="Illustration de la pièce: Restauration">
         <h1>Restauration</h1>
         <p class="description">Quia ad non quisquam. Magni fugit et ea voluptate maiores.</p>
         <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0">Provident ea et consequatur</h4>
-            </div>
+          <div class="card">
             <div class="card-block">
+              <h4 class="card-title mb-0">Provident ea et consequatur</h4>
               <p class="card-text">
                 <p>Illum nihil sed nesciunt temporibus. Neque consequatur cum eos error enim. Provident ea et consequatur.</p>
                 <p>Rerum itaque quis nostrum aut consequatur voluptatum blanditiis eos. Aut amet aliquam et omnis. Et nisi magnam
                   et rerum neque laudantium enim porro. Vel qui harum totam vel.</p>
               </p>
             </div>
-            <a href="http://schneider-jenkins.com/" class="card-block card-block-link text-center">
+            <a href="#" class="card-block card-block-link text-center">
       <span class="card-link">En savoir plus</span>
     </a>
           </div>
         </div>
       </div>
-      <div class="isometric-block block-2x2" data-coordinates="[0,0]" data-coordinates-expanded="[-3,-3]" data-floor="2">
+      <div class="isometric-block block-2x2 has-detail" data-coordinates="[0,0]" data-coordinates-expanded="[-3,-3]" data-floor="2">
         <img src="img/loisirs-ref-1298x1262.png" alt="Illustration de la pièce: Loisirs">
         <h1>Loisirs</h1>
         <p class="description">Praesentium praesentium tenetur quia quia. Ut voluptate molestiae et et.</p>
         <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0">Est asperiores soluta tempore</h4>
-            </div>
+          <div class="card">
             <div class="card-block">
+              <h4 class="card-title mb-0">Est asperiores soluta tempore</h4>
               <p class="card-text">
                 <p>Nihil in voluptatem sunt non impedit qui. Quae consequatur natus et adipisci. Amet quisquam voluptate iure.
                   Voluptatem numquam dolor et ipsa est voluptatem sequi. Libero et non quos labore sit assumenda maiores.</p>
@@ -284,15 +263,13 @@
                 <p>Occaecati minima et facilis et fugiat dignissimos suscipit. Necessitatibus laudantium quia placeat aliquam
                   dolorem.
                 </p>
-                <p>Porro aliquid aliquid amet laboriosam quo. Molestiae id et soluta corporis aspernatur qui maiores. Autem
-                  aut sint laudantium excepturi quibusdam dicta exercitationem. Voluptate aut eaque esse nostrum sint et.
-                  Corrupti est et quo repellat fuga sit.</p>
-                <p>Minus aperiam non voluptates. Est qui sunt quaerat aut magni aut non. Aut corrupti minus delectus ea maxime
-                  voluptate. Voluptatem aliquam sed voluptates omnis aut occaecati cupiditate.</p>
-                <p>Quaerat quaerat provident voluptas accusamus. Et provident qui voluptas quasi consectetur eum inventore ut.
-                  Minima eveniet aperiam voluptates aliquid vero.</p>
-                <p>Enim magnam culpa voluptatem sint. Esse ea numquam consequatur fugit. Sequi quae vitae debitis doloribus
-                  sequi nesciunt provident rerum. Harum perferendis quam ut est est est id quasi.</p>
+                <p>Nihil in voluptatem sunt non impedit qui. Quae consequatur natus et adipisci. Amet quisquam voluptate iure.
+                  Voluptatem numquam dolor et ipsa est voluptatem sequi. Libero et non quos labore sit assumenda maiores.</p>
+                <p>Ipsam omnis odit accusamus totam facere. Eos excepturi et ex eum unde autem voluptatum consequatur. Perferendis
+                  voluptatibus magni ipsum aut consequatur quia quia. Id corporis aut beatae aut rerum.</p>
+                <p>Occaecati minima et facilis et fugiat dignissimos suscipit. Necessitatibus laudantium quia placeat aliquam
+                  dolorem.
+                </p>
               </p>
             </div>
             <a href="http://esparza.biz/" class="card-block card-block-link text-center">
@@ -303,51 +280,20 @@
       </div>
       <div class="isometric-block block-1x1" data-coordinates="[-2,-4]" data-coordinates-expanded="[]" data-floor="3">
         <img src="img/chambre-B-ref-800x800.png" alt="Illustration de la pièce: ">
-        <h1></h1>
-        <p class="description"></p>
-        <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0"></h4>
-            </div>
-            <div class="card-block">
-              <p class="card-text"></p>
-            </div>
-            <a href="" class="card-block card-block-link text-center">
-        <span class="card-link">En savoir plus</span>
-      </a>
-          </div>
-        </div>
       </div>
       <div class="isometric-block block-1x1" data-coordinates="[-2,-3]" data-coordinates-expanded="[]" data-floor="3">
         <img src="img/chambre-D-ref-800x800.png" alt="Illustration de la pièce: ">
-        <h1></h1>
-        <p class="description"></p>
-        <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0"></h4>
-            </div>
-            <div class="card-block">
-              <p class="card-text"></p>
-            </div>
-            <a href="" class="card-block card-block-link text-center">
-        <span class="card-link">En savoir plus</span>
-      </a>
-          </div>
-        </div>
       </div>
-      <div class="isometric-block block-2x1" data-coordinates="[-1,-3]" data-coordinates-expanded="[-3,5]" data-floor="3">
+      <div class="isometric-block block-2x1 has-detail" data-coordinates="[-1,-3]" data-coordinates-expanded="[-3,5]" data-floor="3">
         <img src="img/Soignants-ref-1200x1030.png" alt="Illustration de la pièce: Soignants">
         <h1>Soignants</h1>
         <p class="description"></p>
         <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0"></h4>
-            </div>
+          <div class="card">
             <div class="card-block">
-              <p class="card-text"></p>
+              <h4 class="card-title mb-0"></h4>
+              <p class="card-text">Eligendi culpa cum aspernatur dicta. Voluptates et dolorem inventore. Saepe commodi aut optio occaecati fugiat
+                voluptatem laudantium.</p>
             </div>
             <a href="" class="card-block card-block-link text-center">
         <span class="card-link">En savoir plus</span>
@@ -357,111 +303,23 @@
       </div>
       <div class="isometric-block block-1x1" data-coordinates="[-4,-2]" data-coordinates-expanded="[]" data-floor="3">
         <img src="img/chambre-A-ref-800x800.png" alt="Illustration de la pièce: ">
-        <h1></h1>
-        <p class="description"></p>
-        <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0"></h4>
-            </div>
-            <div class="card-block">
-              <p class="card-text"></p>
-            </div>
-            <a href="" class="card-block card-block-link text-center">
-        <span class="card-link">En savoir plus</span>
-      </a>
-          </div>
-        </div>
       </div>
       <div class="isometric-block block-1x1" data-coordinates="[-3,-2]" data-coordinates-expanded="[]" data-floor="3">
         <img src="img/chambre-D-ref-800x800.png" alt="Illustration de la pièce: ">
-        <h1></h1>
-        <p class="description"></p>
-        <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0"></h4>
-            </div>
-            <div class="card-block">
-              <p class="card-text"></p>
-            </div>
-            <a href="" class="card-block card-block-link text-center">
-        <span class="card-link">En savoir plus</span>
-      </a>
-          </div>
-        </div>
       </div>
       <div class="isometric-block block-1x1" data-coordinates="[-4,-1]" data-coordinates-expanded="[]" data-floor="3">
         <img src="img/chambre-C-ref-800x800.png" alt="Illustration de la pièce: ">
-        <h1></h1>
-        <p class="description"></p>
-        <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0"></h4>
-            </div>
-            <div class="card-block">
-              <p class="card-text"></p>
-            </div>
-            <a href="" class="card-block card-block-link text-center">
-        <span class="card-link">En savoir plus</span>
-      </a>
-          </div>
-        </div>
       </div>
       <div class="isometric-block block-1x1" data-coordinates="[-3,-1]" data-coordinates-expanded="[]" data-floor="3">
         <img src="img/chambre-B-ref-800x800.png" alt="Illustration de la pièce: ">
-        <h1></h1>
-        <p class="description"></p>
-        <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0"></h4>
-            </div>
-            <div class="card-block">
-              <p class="card-text"></p>
-            </div>
-            <a href="" class="card-block card-block-link text-center">
-        <span class="card-link">En savoir plus</span>
-      </a>
-          </div>
-        </div>
       </div>
       <div class="isometric-block block-2x1" data-coordinates="[-2,-1]" data-coordinates-expanded="[1,5]" data-floor="3">
         <img src="img/finances-ref-1200x1030.png" alt="Illustration de la pièce: Finances">
         <h1>Finances</h1>
-        <p class="description"></p>
-        <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0"></h4>
-            </div>
-            <div class="card-block">
-              <p class="card-text"></p>
-            </div>
-            <a href="" class="card-block card-block-link text-center">
-        <span class="card-link">En savoir plus</span>
-      </a>
-          </div>
-        </div>
       </div>
       <div class="isometric-block block-2x1" data-coordinates="[-1,-1]" data-coordinates-expanded="[4,1]" data-floor="3">
         <img src="img/bureau-manager-ref-1200x1030.png" alt="Illustration de la pièce: Bureau manager">
         <h1>Bureau manager</h1>
-        <p class="description"></p>
-        <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0"></h4>
-            </div>
-            <div class="card-block">
-              <p class="card-text"></p>
-            </div>
-            <a href="" class="card-block card-block-link text-center">
-        <span class="card-link">En savoir plus</span>
-      </a>
-          </div>
-        </div>
       </div>
       <div class="isometric-block block-1x2" data-coordinates="[-1,2]" data-coordinates-expanded="[]" data-floor="1">
         <img src="img/Exterieur-EMS-Cuisine_stock.png" alt="Illustration de la pièce: ">
@@ -470,19 +328,6 @@
         <img src="img/Exterieur-EMS-Accueil-ouest.png" alt="Illustration de la pièce: Bureau manager">
         <h1>Bureau manager</h1>
         <p class="description">Dolor voluptate aut qui voluptates quibusdam. Eum quos officia et.</p>
-        <div class="content-detail">
-          <div class="card sd-card">
-            <div class="card-block-title card-block card-block-inverse">
-              <h4 class="card-title mb-0"></h4>
-            </div>
-            <div class="card-block">
-              <p class="card-text"></p>
-            </div>
-            <a href="" class="card-block card-block-link text-center">
-        <span class="card-link">En savoir plus</span>
-      </a>
-          </div>
-        </div>
       </div>
       <div class="isometric-block block-2x1" data-coordinates="[2,-1]" data-coordinates-expanded="[]" data-floor="1">
         <img src="img/Exterieur-EMS-Transport.png" alt="Illustration de la pièce: ">
@@ -490,7 +335,7 @@
       <div class="isometric-block block-2x1" data-coordinates="[2,1]" data-coordinates-expanded="[]" data-floor="1">
         <img src="img/Exterieur-EMS-Accueil-est.png" alt="Illustration de la pièce: ">
       </div>
-      <div class="isometric-block block-1x1" data-coordinates="[2,2]" data-coordinates-expanded="[]" data-floor="1">
+      <div class="isometric-block block-1x1" data-coordinates="[2,2]" data-floor="1">
         <img src="img/Exterieur-EMS-Accueil-angle.png" alt="Illustration de la pièce: ">
       </div>
       <div class="focus-background gradient-background gradient-background-brown">
@@ -500,7 +345,23 @@
 
   <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
     crossorigin="anonymous"></script>
-  <script src="../dist/app.bundle.js"></script>
+  <script src="../dist/house-of-isometric.js"></script>
+  <script>
+    $(document).ready(function () {
+      var isometricLayout = new IsometricGrid($('.isometric-layout'), 200, 116);
+      $('.isometric-layout .showExpandedView').on('click touch', function(e) {
+        e.preventDefault();
+        isometricLayout.showExpandedView();
+      });
+      $('.isometric-layout .showHomeView').on('click touch', function(e) {
+        e.preventDefault();
+        isometricLayout.showHomeView();
+      });
+      $(window).resize(function() {
+        isometricLayout.reCenter();
+      });
+    });
+  </script>
 </body>
 
 </html>
