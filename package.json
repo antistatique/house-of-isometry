@@ -9,8 +9,8 @@
     "yarn": "0.17.4"
   },
   "scripts": {
-    "build": "npm run build-js && npm run build-css",
-    "watch": "npm run watch-js && npm run watch-css",
+    "build": "npm run build-js & npm run build-css",
+    "watch": "npm run watch-js & npm run watch-css",
     "build-js": "babel src/house-of-isometric.js --out-file dist/house-of-isometric.js",
     "watch-js": "babel --watch src/house-of-isometric.js --out-file dist/house-of-isometric.js",
     "build-css": "node-sass --include-path scss src/house-of-isometric.scss dist/house-of-isometric.css",

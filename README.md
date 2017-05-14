@@ -1,17 +1,26 @@
 # House of Isometric
-Isometric projection visualisation right there in the DOM.
+House of Isometric is a jQuery plugin that help creating an isometric projection visualisation directly in the DOM.
 
 ## Use the library
-Clone the project
+- Clone the project
 
-Include the following assets in your project
+- Embed of version of jQuery
+
+- Include the following assets in your project :
 ```
 <link rel="stylesheet" type="text/css" href="house-of-isometric.css">
 <script src="house-of-isometric.bundle.js"></script>
 ```
 
-
-## Build your own distribution
+## To build your own distribution you can use the following command
 ```
-$ yarn bundle
-```p
+$ npm run build
+$ npm run watch
+```
+or more specifically
+```
+$ npm run build-js
+$ npm run build-css
+$ npm run watch-js
+$ npm run watch-css
+```
