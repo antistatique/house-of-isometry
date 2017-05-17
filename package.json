@@ -1,8 +1,8 @@
 {
-  "name": "house-of-isometric",
+  "name": "house-of-isometry",
   "version": "1.0.0",
   "description": "Isometric projection in the DOM",
-  "main": "dist/house-of-isometric.js",
+  "main": "dist/house-of-isometry.js",
   "engines": {
     "node": "7.2.0",
     "npm": "3.10.3",
@@ -11,12 +11,12 @@
   "scripts": {
     "build": "npm run build-js & npm run build-css",
     "watch": "npm run watch-js & npm run watch-css",
-    "build-js": "babel src/house-of-isometric.js --out-file dist/house-of-isometric.js",
-    "watch-js": "babel --watch src/house-of-isometric.js --out-file dist/house-of-isometric.js",
-    "build-css": "node-sass --include-path scss src/house-of-isometric.scss dist/house-of-isometric.css",
-    "watch-css": "node-sass -w --include-path scss src/house-of-isometric.scss dist/house-of-isometric.css"
+    "build-js": "babel src/house-of-isometry.js --out-file dist/house-of-isometry.js",
+    "watch-js": "babel --watch src/house-of-isometry.js --out-file dist/house-of-isometry.js",
+    "build-css": "node-sass --include-path scss src/house-of-isometry.scss dist/house-of-isometry.css",
+    "watch-css": "node-sass -w --include-path scss src/house-of-isometry.scss dist/house-of-isometry.css"
   },
-  "repository": "https://github.com/antistatique/house-of-isometric",
+  "repository": "https://github.com/antistatique/house-of-isometry",
   "author": "Julien Minguely <jminguely@gmail.com>",
   "license": "MIT",
   "dependencies": {
