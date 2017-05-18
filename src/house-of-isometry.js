@@ -48,7 +48,7 @@ class IsometricGrid {
     * @param {integer} tile_width - The width of a isometric tile width (or horizontal diagonale)
     * @param {integer} tile_width - The width of a isometric tile heigt (or vertical diagonale)
   */
-  constructor(container, tile_width, tile_height) {
+  constructor(container, tile_width, tile_height, floor_height) {
     this.blocks = [];
     this.container = container;
     this.element = this.container.find(".isometric-grid");
@@ -56,6 +56,7 @@ class IsometricGrid {
     this.expanded = false;
     this.tile_width = tile_width;
     this.tile_height = tile_height;
+    this.floor_height = floor_height;
     this.dragging = false;
     this.disableClick = false;
     this.mouse_start_x = 0;
@@ -174,7 +175,7 @@ class IsometricGrid {
           block.element.attr("data-coordinates")
         );
         // Adds the offset according to the floor.
-        floor_offset = parseInt(block.element.attr("data-floor"), 10) * 30;
+        floor_offset = parseInt(block.element.attr("data-floor"), 10) * this.floor_height;
       }
 
       // Get the current position and update the css position with it.
@@ -182,7 +183,7 @@ class IsometricGrid {
 
       block.element.css({
         left: currentPosition[0],
-        top: currentPosition[1] + floor_offset
+        top: currentPosition[1] - floor_offset
       });
     }
   }
