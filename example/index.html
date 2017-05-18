@@ -4,17 +4,32 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>House of Isometric</title>
+  <title>House of Isometry</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous">
   <link rel="stylesheet" href="../dist/house-of-isometry.css">
+  <style>
+    .impressum {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      background: #eee;
+      border-top-left-radius: 0.5em;
+      box-shadow: 0 0 2px rgba(200,200,200,1);
+    }
+
+    .impressum p{
+      margin: 0 0.5em;
+      font-size: 12px;
+    }
+  </style>
 </head>
 
 <body class="bg-info">
   <div class="sr-only">
     <h1>House of Isometry</h1>
-    <h2><strong>An isometric representation of many services</strong></h2>
+    <h2><strong>An isometric representation of our many services</strong></h2>
   </div>
   <div aria-hidden="true" class="isometric-layout home-view">
     <div class="information-container visible information-container-home">
@@ -24,10 +39,10 @@
             <div class="text-center">
               <div class="fade-out-top fade-out">
                 <h1>House of Isometry</h1>
-                <h4 class="text-muted mb-3"><strong>An isometric representation of many services</strong></h4>
+                <h4 class="text-muted mb-3"><strong>An isometric representation of our many services</strong></h4>
               </div>
               <div class="fade-out-bottom fade-out mt-5">
-                <a href="#" class="btn btn-lg btn-primary btn-bold showExpandedView">Explore the building 💥</a>
+                <a href="#" class="btn btn-lg btn-warning btn-bold showExpandedView">Explore the building 💥</a>
               </div>
             </div>
           </div>
@@ -60,8 +75,7 @@
       <div class="isometric-block block-2x2 has-detail" data-coordinates="[3,2]" data-coordinates-expanded="[1,-3]" data-floor="1">
         <img src="img/transportl-ref-1298x1262.png" alt="Illustration de la pièce: Debitis enim amet suscipit">
         <h1>Transport</h1>
-        <p class="description">Reprehenderit dolor dolores reiciendis est distinctio atque quidem debitis. Eum delectus suscipit fuga qui saepe
-          deserunt mollitia. Accusamus iste quas eligendi distinctio voluptatibus incidunt.</p>
+        <p class="description">Reprehenderit dolor dolores reiciendis est distinctio atque quidem debitis.</p>
         <div class="content-detail">
           <div class="card">
             <div class="card-block">
@@ -80,7 +94,7 @@
       <div class="isometric-block block-2x1 has-detail" data-coordinates="[1,3]" data-coordinates-expanded="[-6,1]" data-floor="1">
         <img src="img/stock-ref-1200x1030.png" alt="Illustration de la pièce: Sed repellendus">
         <h1>Supply</h1>
-        <p class="description">Repudiandae eligendi nesciunt adipisci facere exercitationem esse commodi. Vel et aut ipsa tenetur nihil.</p>
+        <p class="description">Repudiandae eligendi nesciunt adipisci facere exercitationem esse commodi.</p>
         <div class="content-detail">
           <div class="card">
             <div class="card-block">
@@ -99,7 +113,7 @@
       <div class="isometric-block block-2x1 has-detail" data-coordinates="[3,3]" data-coordinates-expanded="[-3,1]" data-floor="1">
         <img src="img/cuisine-ref-1200x1030.png" alt="Illustration de la pièce: Repudiandae repellendus nesciunt">
         <h1>Kitchen</h1>
-        <p class="description">Et illum eum ea dolorem eveniet et. Repudiandae ut ipsa ut ut. Dignissimos hic facilis distinctio accusantium doloremque.<br>
+        <p class="description">Et illum eum ea dolorem eveniet et. Repudiandae ut ipsa ut ut.<br>
         </p>
         <div class="content-detail">
           <div class="card">
@@ -281,7 +295,7 @@
       </div>
       <div class="isometric-block block-2x1 has-detail" data-coordinates="[3,1]" data-coordinates-expanded="[-3,5]" data-floor="3">
         <img src="img/Soignants-ref-1200x1030.png" alt="Illustration de la pièce: Soignants">
-        <h1>Soignants</h1>
+        <h1>Nursing staff</h1>
         <p class="description"></p>
         <div class="content-detail">
           <div class="card">
@@ -319,10 +333,8 @@
       <div class="isometric-block block-1x2" data-coordinates="[1,4]" data-coordinates-expanded="[]" data-floor="1">
         <img src="img/Exterieur-EMS-Cuisine_stock.png" alt="Illustration de la pièce: ">
       </div>
-      <div class="isometric-block block-1x2" data-coordinates="[3,4]" data-coordinates-expanded="[2,8]" data-floor="1">
+      <div class="isometric-block block-1x2" data-coordinates="[3,4]" data-floor="1">
         <img src="img/Exterieur-EMS-Accueil-ouest.png" alt="Illustration de la pièce: Bureau manager">
-        <h1>Manager's office</h1>
-        <p class="description">Dolor voluptate aut qui voluptates quibusdam. Eum quos officia et.</p>
       </div>
       <div class="isometric-block block-2x1" data-coordinates="[4,1]" data-coordinates-expanded="[]" data-floor="1">
         <img src="img/Exterieur-EMS-Transport.png" alt="Illustration de la pièce: ">
@@ -336,6 +348,11 @@
       <div class="focus-background gradient-background gradient-background-brown">
       </div>
     </div>
+  </div>
+  <div class="impressum">
+    <p class="text-muted">
+      realised by <a href="http://www.antistatique.net">Antistatique</a> for <a href="http://www.sadies.ch">Sadies</a>, illustration by <a href="http://www.philippe-mignotte.fr/">P. Mignotte</a>
+    </p>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
