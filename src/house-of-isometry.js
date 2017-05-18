@@ -27,16 +27,10 @@ class Block {
   getPosition() {
     const x =
       (this.currentcoordinates[0] - this.currentcoordinates[1]) *
-        this.grid.tile_width /
-        2 +
-      this.grid.center[0] -
-      this.grid.tile_width / 2;
+      this.grid.tile_width / 2 + this.grid.center[0] - this.grid.tile_width / 2;
     const y =
       (this.currentcoordinates[0] + this.currentcoordinates[1]) *
-        this.grid.tile_height /
-        2 +
-      this.grid.center[1] -
-      this.grid.tile_height / 2;
+      this.grid.tile_height / 2 + this.grid.center[1] - this.grid.tile_height / 2;
     return [x, y];
   }
 }
@@ -86,13 +80,13 @@ class IsometricGrid {
     self.container.addClass("ready");
 
     // Eventlistener for all touch event related to the drag/drop.
-    container.on("mousedown touchstart", function(e) {
+    container.on("mousedown touchstart", (e) => {
       self.startDrag(e);
     });
-    $(window).on("mousemove touchmove", function(e) {
+    $(window).on("mousemove touchmove", (e) => {
       self.drag(e);
     });
-    $(window).on("mouseup touchend", function(e) {
+    $(window).on("mouseup touchend", (e) => {
       self.endDrag();
     });
 
