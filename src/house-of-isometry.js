@@ -25,11 +25,9 @@ class Block {
     * @return {integer[]} - An array with the X/Y current coordinates.
   */
   getPosition() {
-    const x =
-      (this.currentcoordinates[0] - this.currentcoordinates[1]) *
+    const x = (this.currentcoordinates[0] - this.currentcoordinates[1]) *
       this.grid.tile_width / 2 + this.grid.center[0] - this.grid.tile_width / 2;
-    const y =
-      (this.currentcoordinates[0] + this.currentcoordinates[1]) *
+    const y = (this.currentcoordinates[0] + this.currentcoordinates[1]) *
       this.grid.tile_height / 2 + this.grid.center[1] - this.grid.tile_height / 2;
     return [x, y];
   }
