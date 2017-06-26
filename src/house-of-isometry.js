@@ -306,5 +306,3 @@ class IsometricGrid {
     this.update();
   }
 }
-
-export default { IsometricGrid };
