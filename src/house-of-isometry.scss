@@ -1,7 +1,6 @@
 @charset 'UTF-8';
 
 $text-color: #fff;
-$focus-background-color: #5bc0de;
 
 .isometric-block {
   display: block;
@@ -313,7 +312,6 @@ $focus-background-color: #5bc0de;
       opacity: 0;
       z-index: 60;
       transition: opacity 0.5s, z-index 0s 0.5s;
-      background: $focus-background-color;
     }
 
     .btn {
