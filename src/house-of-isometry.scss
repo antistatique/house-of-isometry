@@ -98,6 +98,18 @@ $text-color: #fff;
     }
   }
 
+  &.isometric-block-sm {
+    h1 {
+      top: 25%;
+      left: 5%;
+    }
+
+    .description {
+      bottom: 0%;
+      left: 56%;
+    }
+  }
+
   img {
     display: block;
     width: 100%;
@@ -111,7 +123,7 @@ $text-color: #fff;
     width: 300px;
     opacity: 0;
     color: $text-color;
-    text-shadow: 0 1px 2px transparentize(#000, 0.7);
+    text-shadow: -1px -1px #aaa, -3px 2px 2px transparentize(#000, 0.7);
     transform-origin: 0 50%;
     transform: rotate(-30deg) skewX(-30deg) skewY(0deg) translateY(-100%);
     transition: opacity 0.2s, top 0s 0.2s, left 0s 0.2s;
