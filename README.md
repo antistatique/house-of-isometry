@@ -1,6 +1,9 @@
 # House of Isometry
 House of Isometry is a jQuery plugin that help to create a building in a 3d isometric projection from basic DOM element, all positioned in absolute.
 You can navigate through an exploded view of the rooms which are all interactive. They will give you some more information about them & their content.
+
+![House of Isometry](documentation/houseiso.png)
+
 This is a project made with ♥️  by Antistatique a Swiss web agency based in Lausanne for one of our client. The amazing illustration are from Philippe Mignotte
 
 ## Use the library
