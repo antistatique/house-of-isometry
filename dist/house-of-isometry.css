@@ -1,0 +1,212 @@
+.isometric-block {
+  display: block;
+  position: relative;
+  transform-origin: 50% 50%;
+  transition: all 0.5s ease-out, z-index 0s, opacity 0.3s 0.3s; }
+  .isometric-block.has-detail:hover {
+    cursor: zoom-in; }
+  .isometric-block .content-detail {
+    display: none; }
+  .isometric-block.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0s; }
+  .isometric-block.active {
+    z-index: 200; }
+    @media screen and (min-width: 762px) {
+      .isometric-block.active {
+        transform: scale(1.3) !important; } }
+    .isometric-block.active .description {
+      opacity: 1;
+      transform: rotate(-30deg) skewX(30deg) skewY(0deg) translateY(100%);
+      transition: transform 0.3s ease-out, opacity 0.3s; }
+  .isometric-block.block-1x1 {
+    width: 200px;
+    height: 200px; }
+    .isometric-block.block-1x1 h1 {
+      top: 20%;
+      left: 0; }
+    .isometric-block.block-1x1 .description {
+      bottom: -10%;
+      left: 53%; }
+  .isometric-block.block-2x1 {
+    width: 305px;
+    height: 318px; }
+    .isometric-block.block-2x1 h1 {
+      top: 35%;
+      left: 0; }
+    .isometric-block.block-2x1 .description {
+      bottom: 11%;
+      left: 36%; }
+  .isometric-block.block-2x2 {
+    width: 404px;
+    height: 376px;
+    transform-origin: 202px 188px; }
+    .isometric-block.block-2x2 h1 {
+      top: 30%;
+      left: 0; }
+    .isometric-block.block-2x2 .description {
+      bottom: 8%;
+      left: 50%; }
+  .isometric-block.block-1x2 {
+    width: 300px;
+    height: 258px;
+    transform-origin: 150px 129px; }
+    .isometric-block.block-1x2 h1 {
+      top: 20%;
+      left: 0; }
+    .isometric-block.block-1x2 .description {
+      bottom: -8%;
+      left: 70%; }
+  .isometric-block.isometric-block-sm h1 {
+    top: 25%;
+    left: 5%; }
+  .isometric-block.isometric-block-sm .description {
+    bottom: 0%;
+    left: 56%; }
+  .isometric-block img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .isometric-block h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    opacity: 0;
+    color: #fff;
+    text-shadow: -1px -1px #aaa, -3px 2px 2px rgba(0, 0, 0, 0.3);
+    transform-origin: 0 50%;
+    transform: rotate(-30deg) skewX(-30deg) skewY(0deg) translateY(-100%);
+    transition: opacity 0.2s, top 0s 0.2s, left 0s 0.2s; }
+  .isometric-block .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    opacity: 0;
+    line-height: 1.3;
+    color: #fff;
+    letter-spacing: 0.05em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    transform-origin: 0 100%;
+    transform: rotate(-30deg) skewX(30deg) skewY(0deg) translateY(90%);
+    transition: all 0.2s; }
+
+.detail-view .isometric-block h1,
+.expanded-view .isometric-block h1 {
+  opacity: 1;
+  transition: top 0.2s 0.3s, opacity 0.2s 0.3s; }
+
+.detail-view .isometric-block:hover .description,
+.expanded-view .isometric-block:hover .description {
+  opacity: 1;
+  transform: rotate(-30deg) skewX(30deg) skewY(0deg) translateY(100%);
+  transition: transform 0.2s, opacity 0.2s; }
+
+.isometric-layout {
+  position: relative;
+  width: 100vw;
+  height: 400px;
+  z-index: 0;
+  overflow: hidden;
+  transition: height 0.6s ease-in-out; }
+  .isometric-layout.ready {
+    height: 100vh;
+    min-height: 800px; }
+    .isometric-layout.ready .isometric-grid {
+      opacity: 1; }
+  @media screen and (max-width: 762px) {
+    .isometric-layout {
+      height: 700px; } }
+  .isometric-layout::after {
+    content: '';
+    display: block;
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2));
+    z-index: 100;
+    transition: opacity 0.3s; }
+  .isometric-layout.home-view .isometric-block {
+    cursor: zoom-in; }
+  .isometric-layout.home-view .isometric-grid {
+    transform: scale(0.75);
+    transition: left 0.3s, top 0.3s, opacity 0.6s, transform 0.3s 0s; }
+  .isometric-layout.home-view .information-container-home {
+    display: block; }
+  .isometric-layout.detail-view {
+    height: 100vh;
+    min-height: 800px; }
+    .isometric-layout.detail-view .isometric-grid {
+      transition: left 0.3s, top 0.3s; }
+    .isometric-layout.detail-view .isometric-grid .focus-background {
+      cursor: zoom-out;
+      opacity: 0.8;
+      z-index: 90;
+      transition: opacity 0.3s, z-index 0s 0s; }
+    .isometric-layout.detail-view .information-container-detail {
+      cursor: zoom-out;
+      display: block; }
+      .isometric-layout.detail-view .information-container-detail .content-detail-container {
+        cursor: default;
+        max-height: 100vh;
+        overflow: scroll; }
+  .isometric-layout.expanded-view::after {
+    opacity: 1; }
+  .isometric-layout.expanded-view .isometric-grid {
+    cursor: move;
+    cursor: grab; }
+    .isometric-layout.expanded-view .isometric-grid:active {
+      cursor: grabbing; }
+  .isometric-layout.expanded-view .information-container-expanded {
+    display: block; }
+  .isometric-layout.expanded-view .fade-out-top {
+    opacity: 0;
+    transform: translateY(-100%); }
+  .isometric-layout.expanded-view .fade-out-bottom {
+    opacity: 0;
+    transform: translateY(100%); }
+  .isometric-layout .information-container {
+    display: none;
+    position: relative;
+    z-index: 100; }
+    .isometric-layout .information-container .fade-out {
+      transition: transform 0.3s, opacity, 0.3s; }
+  .isometric-layout .isometric-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100%;
+    z-index: 50;
+    opacity: 0;
+    transform-origin: 50% 50%; }
+    .isometric-layout .isometric-grid .isometric-block {
+      position: absolute;
+      z-index: 80; }
+      .isometric-layout .isometric-grid .isometric-block.active {
+        z-index: 100; }
+      .isometric-layout .isometric-grid .isometric-block.block-1x1 {
+        transform: translateY(0); }
+      .isometric-layout .isometric-grid .isometric-block.block-2x1 {
+        transform: translate(-0.5%, -19.5%); }
+      .isometric-layout .isometric-grid .isometric-block.block-1x2 {
+        transform: translate(-32%, -21.5%); }
+      .isometric-layout .isometric-grid .isometric-block.block-2x2 {
+        transform: translate(-24.5%, -30.85106%); }
+    .isometric-layout .isometric-grid .information-container {
+      opacity: 1; }
+    .isometric-layout .isometric-grid .focus-background {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      z-index: 60;
+      transition: opacity 0.5s, z-index 0s 0.5s; }
+    .isometric-layout .isometric-grid .btn {
+      position: relative; }
