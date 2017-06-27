@@ -1,5 +1,4 @@
 /* global $ */
-/* exported IsometricGrid */
 
 class Block {
   /**
@@ -36,7 +35,13 @@ class Block {
   }
 }
 
+/* eslint-disable no-unused-vars*/
+/*
+ * Disable the linter for the issue when a class is defined but never used
+ * because IsometricGrid in used externally.
+*/
 class IsometricGrid {
+/* eslint-enable */
   /**
     * @desc Constructor of the Isometric Grid object
     * @param {JQuery} container - The container containing the grid
